@@ -1,6 +1,6 @@
 const inputValidation = document.querySelector("#validation-input");
 
-const onValidationCheck = (event) => {
+const validationEvent = () => {
   if (
     inputValidation.getAttribute("data-length") > inputValidation.value.length
   ) {
@@ -12,4 +12,4 @@ const onValidationCheck = (event) => {
   }
 };
 
-inputValidation.addEventListener("blur", onValidationCheck);
+inputValidation.addEventListener("blur", validationEvent);
