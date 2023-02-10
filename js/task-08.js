@@ -9,14 +9,13 @@ const validationForm = (event) => {
 
   if (email.value === "" || password.value === "") {
     alert("Всі поля повинні бути заповнені.");
+    return;
   }
 
   const formData = {
     email: email.value,
     password: password.value,
   };
-
-  console.log(formData);
 
   form.reset();
 };

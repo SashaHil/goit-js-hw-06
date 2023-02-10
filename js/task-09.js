@@ -7,8 +7,10 @@ function getRandomHexColor() {
 }
 
 const colorEvent = () => {
-  body.style.backgroundColor = getRandomHexColor();
-  color.textContent = getRandomHexColor();
+  let colorRandom = getRandomHexColor();
+
+  body.style.backgroundColor = colorRandom;
+  color.textContent = colorRandom;
 };
 
 colorChange.addEventListener("click", colorEvent);
