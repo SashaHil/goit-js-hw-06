@@ -17,6 +17,8 @@ const validationForm = (event) => {
     password: password.value,
   };
 
+  console.log(formData);
+
   form.reset();
 };
 
