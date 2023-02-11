@@ -2,7 +2,8 @@ const inputValidation = document.querySelector("#validation-input");
 
 const validationEvent = (event) => {
   if (
-    inputValidation.value.length == inputValidation.getAttribute("data-length")
+    inputValidation.value.length ===
+    +inputValidation.getAttribute("data-length")
   ) {
     inputValidation.classList.add("valid");
     if (inputValidation.classList.contains("invalid")) {
